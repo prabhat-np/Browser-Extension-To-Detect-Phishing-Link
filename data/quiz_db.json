@@ -1,0 +1,741 @@
+{
+    "modules": [
+        {
+            "id": "m1",
+            "title": "Phishing Basics & URL Analysis",
+            "description": "Learn to identify suspicious URLs and email headers.",
+            "questions": [
+                {
+                    "id": "q1",
+                    "text": "Which of the following URL characteristics is a common indicator of phishing?",
+                    "options": [
+                        "The URL starts with https://",
+                        "The domain name contains a misspelling (e.g., paypa1.com)",
+                        "The URL ends with .com",
+                        "The website loads quickly"
+                    ],
+                    "correct": "The domain name contains a misspelling (e.g., paypa1.com)",
+                    "explanation": "Typosquatting is a common tactic where attackers register domains that look similar to legitimate ones."
+                },
+                {
+                    "id": "q2",
+                    "text": "You receive an email from 'IT Support' asking for your password. What should you do?",
+                    "options": [
+                        "Reply with the password immediately",
+                        "Click the link and reset your password",
+                        "Report it to the actual IT department via official channels",
+                        "Ignore it and delete it"
+                    ],
+                    "correct": "Report it to the actual IT department via official channels",
+                    "explanation": "Legitimate IT support will never ask for your password via email. Verify through official internal channels."
+                }
+            ]
+        }
+    ],
+    "question_bank": [
+        {
+            "id": "b001",
+            "level": "Beginner",
+            "category": "URL & Domain",
+            "text": "Which URL is most likely a phishing attempt?",
+            "options": [
+                "https://www.google.com",
+                "https://accounts.google.com",
+                "http://go0gle.com-login.security-update.xyz",
+                "https://support.google.com"
+            ],
+            "correct": "http://go0gle.com-login.security-update.xyz",
+            "explanation": "Phishers use typosquatting and long misleading subdomains to impersonate trusted brands.",
+            "example": "Example: go0gle.com or paypa1.com are common look-alikes."
+        },
+        {
+            "id": "b002",
+            "level": "Beginner",
+            "category": "Email Safety",
+            "text": "A bank email asks you to 'verify your account' using a link. What is the safest first step?",
+            "options": [
+                "Click the link immediately",
+                "Reply asking if it is real",
+                "Open your bank site by typing the official URL manually",
+                "Forward it to all colleagues"
+            ],
+            "correct": "Open your bank site by typing the official URL manually",
+            "explanation": "Do not trust embedded links. Navigate to the official site through a known safe method."
+        },
+        {
+            "id": "b003",
+            "level": "Beginner",
+            "category": "MFA & OTP",
+            "text": "Which statement about OTP codes is correct?",
+            "options": [
+                "OTP can be shared with IT support if asked",
+                "OTP must never be shared with anyone",
+                "OTP is safe to post in email threads",
+                "OTP is only used for social media accounts"
+            ],
+            "correct": "OTP must never be shared with anyone",
+            "explanation": "Any request for OTP is a strong indicator of fraud or account takeover attempt."
+        },
+        {
+            "id": "b004",
+            "level": "Beginner",
+            "category": "Social Engineering",
+            "text": "Urgency like 'ACT NOW' is commonly used in phishing because it:",
+            "options": [
+                "Improves email delivery speed",
+                "Forces victims to skip verification",
+                "Encrypts the message",
+                "Confirms the sender is legitimate"
+            ],
+            "correct": "Forces victims to skip verification",
+            "explanation": "Attackers use urgency to trigger impulsive actions and bypass security checks."
+        },
+        {
+            "id": "b005",
+            "level": "Beginner",
+            "category": "Reporting",
+            "text": "If you suspect a phishing email, what should you do?",
+            "options": [
+                "Delete it and forget",
+                "Report it through your bank's official security channel",
+                "Send your password to confirm identity",
+                "Click the link to test it"
+            ],
+            "correct": "Report it through your bank's official security channel",
+            "explanation": "Reporting helps SOC teams block threats and warn other employees."
+        },
+        {
+            "id": "b006",
+            "level": "Beginner",
+            "category": "Password Security",
+            "text": "Which is the strongest password?",
+            "options": [
+                "Password123",
+                "Admin@123",
+                "Tr0ub4dor&3",
+                "mynameisjohn"
+            ],
+            "correct": "Tr0ub4dor&3",
+            "explanation": "Strong passwords combine upper/lowercase, numbers, and symbols, and are not easily guessable."
+        },
+        {
+            "id": "b007",
+            "level": "Beginner",
+            "category": "Email Safety",
+            "text": "What is the 'From' address in an email?",
+            "options": [
+                "Always reliable proof of sender",
+                "Can be easily spoofed (faked)",
+                "Verified by the government",
+                "Only visible to IT staff"
+            ],
+            "correct": "Can be easily spoofed (faked)",
+            "explanation": "Attackers can easily manipulate the 'From' address to look like a trusted source."
+        },
+        {
+            "id": "b008",
+            "level": "Beginner",
+            "category": "Social Engineering",
+            "text": "An attacker calls claiming to be from Microsoft Support to fix a virus. This is:",
+            "options": [
+                "Legitimate support",
+                "Vishing (Voice Phishing)",
+                "Smishing (SMS Phishing)",
+                "A wrong number"
+            ],
+            "correct": "Vishing (Voice Phishing)",
+            "explanation": "Tech support scams via phone are a common form of Vishing."
+        },
+        {
+            "id": "b009",
+            "level": "Beginner",
+            "category": "Device Security",
+            "text": "You find a USB drive in the parking lot. You should:",
+            "options": [
+                "Plug it in to see who owns it",
+                "Format it and keep it",
+                "Hand it to security personnel",
+                "Ignore it"
+            ],
+            "correct": "Hand it to security personnel",
+            "explanation": "USB drives can contain malware that auto-executes when plugged in."
+        },
+        {
+            "id": "b010",
+            "level": "Beginner",
+            "category": "URL & Domain",
+            "text": "What does HTTP (without S) mean?",
+            "options": [
+                "Hyper Text Transfer Protocol Secure",
+                "Unencrypted connection",
+                "High Tech Transfer Protocol",
+                "Safe browsing mode"
+            ],
+            "correct": "Unencrypted connection",
+            "explanation": "HTTP transmits data in plain text, making it vulnerable to interception."
+        },
+        {
+            "id": "b011",
+            "level": "Beginner",
+            "category": "Social Media",
+            "text": "A friend sends a strange link on Facebook with 'Is this you?'. You should:",
+            "options": [
+                "Click it immediately",
+                "Ask them via another channel if they sent it",
+                "Share it to see if others can open it",
+                "Like the message"
+            ],
+            "correct": "Ask them via another channel if they sent it",
+            "explanation": " compromised accounts are often used to spread phishing links via DM."
+        },
+        {
+            "id": "b012",
+            "level": "Beginner",
+            "category": "Physical Security",
+            "text": "Tailgating is when:",
+            "options": [
+                "You follow a car too closely",
+                "An unauthorized person follows an employee through a secure door",
+                "You eat lunch at your desk",
+                "You share your badge"
+            ],
+            "correct": "An unauthorized person follows an employee through a secure door",
+            "explanation": "Tailgating bypasses physical access controls."
+        },
+        {
+            "id": "b013",
+            "level": "Beginner",
+            "category": "Data Privacy",
+            "text": "PII stands for:",
+            "options": [
+                "Personal Internet Information",
+                "Personally Identifiable Information",
+                "Private Internal Internet",
+                "Public Information Interface"
+            ],
+            "correct": "Personally Identifiable Information",
+            "explanation": "PII includes data like names, SSNs, and addresses that must be protected."
+        },
+        {
+            "id": "b014",
+            "level": "Beginner",
+            "category": "General Security",
+            "text": "Locking your computer when leaving your desk is:",
+            "options": [
+                "Rude to colleagues",
+                "Necessary to prevent unauthorized access",
+                "Only for managers",
+                "Optional if you trust your team"
+            ],
+            "correct": "Necessary to prevent unauthorized access",
+            "explanation": "Unattended unlocked computers are a major security risk."
+        },
+        {
+            "id": "b015",
+            "level": "Beginner",
+            "category": "Email Safety",
+            "text": "What is 'Spam'?",
+            "options": [
+                "A type of canned meat",
+                "Unsolicited bulk email",
+                "Secure Protected Access Mail",
+                "System Protocol Administration Module"
+            ],
+            "correct": "Unsolicited bulk email",
+            "explanation": "While often just annoying, spam is a primary delivery vehicle for phishing."
+        },
+
+        {
+            "id": "i001",
+            "level": "Intermediate",
+            "category": "URL & Domain",
+            "text": "In the URL https://login.bank.com.secure-verification.xyz, the real registered domain is:",
+            "options": [
+                "bank.com",
+                "secure-verification.xyz",
+                "login.bank.com",
+                "bank.com.secure-verification"
+            ],
+            "correct": "secure-verification.xyz",
+            "explanation": "The registered domain is the last two labels for most TLDs. Everything before it is subdomain and can be misleading.",
+            "example": "bank.com.secure-verification.xyz is controlled by the attacker who owns secure-verification.xyz."
+        },
+        {
+            "id": "i002",
+            "level": "Intermediate",
+            "category": "Email Safety",
+            "text": "Which header is most useful to verify if an email was spoofed?",
+            "options": [
+                "Subject",
+                "Received/SPF/DKIM/DMARC results",
+                "Font size",
+                "Attachment icon"
+            ],
+            "correct": "Received/SPF/DKIM/DMARC results",
+            "explanation": "Authentication results and relay path can indicate spoofing and suspicious sending infrastructure."
+        },
+        {
+            "id": "i003",
+            "level": "Intermediate",
+            "category": "BEC",
+            "text": "A vendor requests a last-minute bank account change for payment. Best practice is to:",
+            "options": [
+                "Update immediately to avoid delay",
+                "Verify using a previously known phone number or channel",
+                "Ask them to resend from a different email",
+                "Ignore the request forever"
+            ],
+            "correct": "Verify using a previously known phone number or channel",
+            "explanation": "BEC attackers often manipulate invoice details. Out-of-band verification is required."
+        },
+        {
+            "id": "i004",
+            "level": "Intermediate",
+            "category": "MFA & OTP",
+            "text": "MFA fatigue attacks succeed when users:",
+            "options": [
+                "Use a password manager",
+                "Approve repeated push notifications to stop them",
+                "Disable Wi-Fi",
+                "Change browser themes"
+            ],
+            "correct": "Approve repeated push notifications to stop them",
+            "explanation": "Attackers spam MFA prompts until the victim accepts one."
+        },
+        {
+            "id": "i005",
+            "level": "Intermediate",
+            "category": "Web Safety",
+            "text": "A padlock (HTTPS) confirms:",
+            "options": [
+                "The site is legitimate",
+                "The connection is encrypted, not the site's intent",
+                "The site cannot be phishing",
+                "The site is owned by the bank"
+            ],
+            "correct": "The connection is encrypted, not the site's intent",
+            "explanation": "Phishing sites can also use HTTPS certificates."
+        },
+        {
+            "id": "i006",
+            "level": "Intermediate",
+            "category": "Malware",
+            "text": "Ransomware is malicious software that:",
+            "options": [
+                "Steals passwords only",
+                "Encrypts files and demands payment",
+                "Speeds up the computer",
+                "Deletes browser history"
+            ],
+            "correct": "Encrypts files and demands payment",
+            "explanation": "Ransomware denies access to data until a ransom is paid."
+        },
+        {
+            "id": "i007",
+            "level": "Intermediate",
+            "category": "Network Security",
+            "text": "What is a 'Man-in-the-Middle' (MitM) attack?",
+            "options": [
+                "An attacker intercepts communication between two parties",
+                "A physical intruder in the server room",
+                "A virus that sits in the middle of the screen",
+                "A database error"
+            ],
+            "correct": "An attacker intercepts communication between two parties",
+            "explanation": "MitM attacks occur when an attacker secretly relays and possibly alters the communication between two parties."
+        },
+        {
+            "id": "i008",
+            "level": "Intermediate",
+            "category": "Social Engineering",
+            "text": "Pretexting involves:",
+            "options": [
+                "Sending texts before calling",
+                "Creating a fabricated scenario to steal info",
+                "Using predictive text",
+                "Testing software before release"
+            ],
+            "correct": "Creating a fabricated scenario to steal info",
+            "explanation": "Attackers create a pretext (e.g., posing as HR) to trick victims into divulging sensitive info."
+        },
+        {
+            "id": "i009",
+            "level": "Intermediate",
+            "category": "Data Security",
+            "text": "Which of these is NOT a form of Multi-Factor Authentication?",
+            "options": [
+                "Password + OTP",
+                "Fingerprint + PIN",
+                "Password + Security Question",
+                "Two different passwords"
+            ],
+            "correct": "Two different passwords",
+            "explanation": "MFA requires two *different* types of evidence (something you know, have, or are). Two passwords are just 'something you know' twice."
+        },
+        {
+            "id": "i010",
+            "level": "Intermediate",
+            "category": "Email Safety",
+            "text": "What does DMARC help prevent?",
+            "options": [
+                "Email spoofing",
+                "Spam",
+                "Virus attachments",
+                "Full inbox"
+            ],
+            "correct": "Email spoofing",
+            "explanation": "DMARC uses SPF and DKIM to verify that the sender is authorized to send on behalf of the domain."
+        },
+        {
+            "id": "i011",
+            "level": "Intermediate",
+            "category": "Mobile Security",
+            "text": "Sideloading apps on Android/iOS poses a risk because:",
+            "options": [
+                "It voids the warranty",
+                "Apps bypass official store security checks",
+                "It uses too much data",
+                "It drains battery"
+            ],
+            "correct": "Apps bypass official store security checks",
+            "explanation": "Official stores scan for malware; sideloaded apps may contain malicious code."
+        },
+        {
+            "id": "i012",
+            "level": "Intermediate",
+            "category": "Network Security",
+            "text": "Using Public Wi-Fi for banking is risky because:",
+            "options": [
+                "It is slow",
+                "Traffic can be easily intercepted",
+                "Banks block public IPs",
+                "It costs money"
+            ],
+            "correct": "Traffic can be easily intercepted",
+            "explanation": "Public Wi-Fi is often unencrypted or poorly secured, allowing attackers to sniff traffic."
+        },
+        {
+            "id": "i013",
+            "level": "Intermediate",
+            "category": "Incident Response",
+            "text": "What is the first phase of the Incident Response Lifecycle?",
+            "options": [
+                "Preparation",
+                "Detection",
+                "Containment",
+                "Eradication"
+            ],
+            "correct": "Preparation",
+            "explanation": "Preparation involves setting up policies, tools, and teams before an incident occurs."
+        },
+        {
+            "id": "i014",
+            "level": "Intermediate",
+            "category": "Cryptography",
+            "text": "What is the purpose of hashing passwords?",
+            "options": [
+                "To compress them",
+                "To encrypt them so they can be decrypted",
+                "To store a one-way representation",
+                "To make them longer"
+            ],
+            "correct": "To store a one-way representation",
+            "explanation": "Hashing is one-way; you cannot reverse it to get the original password, which protects it if the DB is stolen."
+        },
+        {
+            "id": "i015",
+            "level": "Intermediate",
+            "category": "Social Engineering",
+            "text": "Quid Pro Quo attacks involve:",
+            "options": [
+                "Something for something",
+                "Threats only",
+                "Silence",
+                "Email only"
+            ],
+            "correct": "Something for something",
+            "explanation": "Attackers offer a service or benefit (e.g., 'I can fix your slow PC') in exchange for information."
+        },
+
+        {
+            "id": "a001",
+            "level": "Advanced",
+            "category": "Threat Modeling",
+            "text": "Which control best reduces the impact of credential phishing in a bank environment?",
+            "options": [
+                "Allow password reuse",
+                "Enforce phishing-resistant MFA (FIDO2/WebAuthn) where possible",
+                "Disable employee training",
+                "Whitelist all external email"
+            ],
+            "correct": "Enforce phishing-resistant MFA (FIDO2/WebAuthn) where possible",
+            "explanation": "Phishing-resistant MFA significantly reduces account takeover even if passwords are captured."
+        },
+        {
+            "id": "a002",
+            "level": "Advanced",
+            "category": "Incident Response",
+            "text": "After a confirmed phishing click, the immediate priority is:",
+            "options": [
+                "Post about it on social media",
+                "Containment and credential reset where applicable",
+                "Ignore it because it's too late",
+                "Disable all bank systems permanently"
+            ],
+            "correct": "Containment and credential reset where applicable",
+            "explanation": "Containment prevents lateral movement; credential resets mitigate unauthorized access."
+        },
+        {
+            "id": "a003",
+            "level": "Advanced",
+            "category": "Detection Engineering",
+            "text": "Why is lexical URL analysis useful for real-time phishing detection?",
+            "options": [
+                "It requires downloading full web page content every time",
+                "It can be computed quickly from the URL string alone",
+                "It only works for one domain",
+                "It requires administrator privileges in the browser"
+            ],
+            "correct": "It can be computed quickly from the URL string alone",
+            "explanation": "Lexical features provide fast signals suitable for browser-triggered scanning."
+        },
+        {
+            "id": "a004",
+            "level": "Advanced",
+            "category": "Malware Analysis",
+            "text": "What is a 'Drive-by Download'?",
+            "options": [
+                "Downloading files while driving",
+                "Unintended download of malicious code by visiting a compromised site",
+                "Manually downloading software from a USB",
+                "Downloading via Bluetooth"
+            ],
+            "correct": "Unintended download of malicious code by visiting a compromised site",
+            "explanation": "Drive-by downloads exploit browser vulnerabilities to install malware without user interaction."
+        },
+        {
+            "id": "a005",
+            "level": "Advanced",
+            "category": "Network Security",
+            "text": "DNS Tunneling is used for:",
+            "options": [
+                "Faster internet speeds",
+                "Bypassing firewalls to exfiltrate data via DNS queries",
+                "Encrypting DNS traffic",
+                "Hosting websites"
+            ],
+            "correct": "Bypassing firewalls to exfiltrate data via DNS queries",
+            "explanation": "Attackers encode data in DNS queries to bypass network filters that allow DNS traffic."
+        },
+        {
+            "id": "a006",
+            "level": "Advanced",
+            "category": "Web Security",
+            "text": "Cross-Site Scripting (XSS) allows attackers to:",
+            "options": [
+                "Crash the server",
+                "Inject malicious scripts into web pages viewed by other users",
+                "Steal the database directly",
+                "Decrypt SSL traffic"
+            ],
+            "correct": "Inject malicious scripts into web pages viewed by other users",
+            "explanation": "XSS executes malicious scripts in the victim's browser, often stealing session cookies."
+        },
+        {
+            "id": "a007",
+            "level": "Advanced",
+            "category": "Authentication",
+            "text": "What is the main advantage of OAuth 2.0?",
+            "options": [
+                "It replaces passwords entirely",
+                "It allows delegated access without sharing credentials",
+                "It encrypts the database",
+                "It is older and more stable"
+            ],
+            "correct": "It allows delegated access without sharing credentials",
+            "explanation": "OAuth lets users grant apps access to their resources without giving the app their password."
+        },
+        {
+            "id": "a008",
+            "level": "Advanced",
+            "category": "Cryptography",
+            "text": "In Public Key Infrastructure (PKI), the private key is used for:",
+            "options": [
+                "Encrypting data for others",
+                "Decrypting data sent to the owner and signing digital signatures",
+                "Public distribution",
+                "Verifying signatures"
+            ],
+            "correct": "Decrypting data sent to the owner and signing digital signatures",
+            "explanation": "The private key is kept secret and used to decrypt messages or sign documents."
+        },
+        {
+            "id": "a009",
+            "level": "Advanced",
+            "category": "Cloud Security",
+            "text": "The 'Shared Responsibility Model' in cloud security means:",
+            "options": [
+                "The cloud provider is responsible for everything",
+                "The customer is responsible for everything",
+                "Security responsibilities are divided between provider and customer",
+                "No one is responsible"
+            ],
+            "correct": "Security responsibilities are divided between provider and customer",
+            "explanation": "Typically, the provider secures the cloud infrastructure, while the customer secures data and access."
+        },
+        {
+            "id": "a010",
+            "level": "Advanced",
+            "category": "Forensics",
+            "text": "Volatility is a tool used for:",
+            "options": [
+                "Stock market analysis",
+                "Memory forensics",
+                "Disk encryption",
+                "Network scanning"
+            ],
+            "correct": "Memory forensics",
+            "explanation": "Volatility is a framework for extracting digital artifacts from volatile memory (RAM) samples."
+        },
+        {
+            "id": "a011",
+            "level": "Advanced",
+            "category": "Penetration Testing",
+            "text": "What is 'SQL Injection'?",
+            "options": [
+                "Injecting fluid into the server",
+                "Manipulating SQL queries via input data",
+                "A type of database backup",
+                "Speeding up SQL queries"
+            ],
+            "correct": "Manipulating SQL queries via input data",
+            "explanation": "SQLi allows attackers to interfere with the queries an application makes to its database."
+        },
+        {
+            "id": "a012",
+            "level": "Advanced",
+            "category": "Zero Trust",
+            "text": "The core principle of Zero Trust architecture is:",
+            "options": [
+                "Trust but verify",
+                "Never trust, always verify",
+                "Trust internal network only",
+                "Trust VPN users"
+            ],
+            "correct": "Never trust, always verify",
+            "explanation": "Zero Trust assumes no user or device is trustworthy by default, regardless of location."
+        },
+        {
+            "id": "a013",
+            "level": "Advanced",
+            "category": "Compliance",
+            "text": "GDPR primarily protects:",
+            "options": [
+                "Government Data",
+                "Global Data",
+                "Data privacy of EU citizens",
+                "US Bank Data"
+            ],
+            "correct": "Data privacy of EU citizens",
+            "explanation": "GDPR is a regulation in EU law on data protection and privacy."
+        },
+        {
+            "id": "a014",
+            "level": "Advanced",
+            "category": "Threat Intelligence",
+            "text": "IOC stands for:",
+            "options": [
+                "International Olympic Committee",
+                "Indicators of Compromise",
+                "Input Output Control",
+                "Internal Operating Center"
+            ],
+            "correct": "Indicators of Compromise",
+            "explanation": "IOCs are artifacts observed on a network or in an OS that indicate a computer intrusion."
+        },
+        {
+            "id": "a015",
+            "level": "Advanced",
+            "category": "Social Engineering",
+            "text": "What is 'Spear Phishing'?",
+            "options": [
+                "Fishing with a spear",
+                "Targeted phishing at a specific individual or organization",
+                "Random mass emailing",
+                "Phishing via SMS"
+            ],
+            "correct": "Targeted phishing at a specific individual or organization",
+            "explanation": "Spear phishing is personalized and highly targeted, making it more dangerous than generic phishing."
+        },
+        {
+            "id": "i016",
+            "level": "Intermediate",
+            "category": "Cloud Security",
+            "text": "Leaving an AWS S3 bucket 'Public' is a risk because:",
+            "options": [
+                "It costs more money",
+                "Anyone on the internet can potentially read/write data",
+                "It slows down access",
+                "Amazon will delete it"
+            ],
+            "correct": "Anyone on the internet can potentially read/write data",
+            "explanation": "Misconfigured public buckets are a leading cause of data breaches in the cloud."
+        },
+        {
+            "id": "i017",
+            "level": "Intermediate",
+            "category": "Detection Engineering",
+            "text": "A 'False Positive' in a security alert means:",
+            "options": [
+                "The alert was correct",
+                "The system alerted on benign activity",
+                "The system missed an attack",
+                "The system crashed"
+            ],
+            "correct": "The system alerted on benign activity",
+            "explanation": "High false positives cause alert fatigue for SOC analysts."
+        },
+        {
+            "id": "a016",
+            "level": "Advanced",
+            "category": "Compliance",
+            "text": "PCI DSS applies to organizations that:",
+            "options": [
+                "Use computers",
+                "Handle credit card information",
+                "Are based in the US",
+                "Have a website"
+            ],
+            "correct": "Handle credit card information",
+            "explanation": "Payment Card Industry Data Security Standard secures credit card transactions."
+        },
+        {
+            "id": "a017",
+            "level": "Advanced",
+            "category": "Cryptography",
+            "text": "Which encryption method is faster for large data?",
+            "options": [
+                "Asymmetric (Public Key)",
+                "Symmetric (Private Key)",
+                "Hashing",
+                "Steganography"
+            ],
+            "correct": "Symmetric (Private Key)",
+            "explanation": "Symmetric encryption uses the same key for encryption and decryption and is computationally faster."
+        },
+        {
+            "id": "a018",
+            "level": "Advanced",
+            "category": "Incident Response",
+            "text": "'Chain of Custody' ensures:",
+            "options": [
+                "The suspect stays in jail",
+                "Evidence is handled properly and admissible in court",
+                "The server is locked",
+                "The network is secure"
+            ],
+            "correct": "Evidence is handled properly and admissible in court",
+            "explanation": "It tracks the handling of evidence to prevent tampering during an investigation."
+        }
+    ]
+}

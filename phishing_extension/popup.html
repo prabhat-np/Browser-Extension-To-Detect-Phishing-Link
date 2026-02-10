@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FinShield AI</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 12px; width: 320px; background: #f3f4f6; }
+    .title { font-weight: 800; font-size: 16px; color: #111827; }
+    .sub { margin-top: 2px; font-size: 12px; color: #6b7280; }
+    .card { margin-top: 10px; padding: 12px; border: 1px solid #d1d5db; border-radius: 10px; background: #ffffff; }
+    .row { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+    .pill { font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
+    .pill-ok { background: #dcfce7; color: #166534; }
+    .pill-mid { background: #fef3c7; color: #92400e; }
+    .pill-bad { background: #fee2e2; color: #b91c1c; }
+    .pill-unknown { background: #e5e7eb; color: #374151; }
+    input { width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 12px; }
+    button { width: 100%; margin-top: 8px; padding: 9px; border: none; border-radius: 6px; cursor: pointer; font-weight: 700; font-size: 13px; }
+    .primary { background-color: #1d4ed8; color: white; }
+    .secondary { background-color: #111827; color: white; }
+    .danger { background-color: #dc2626; color: white; }
+    .muted { font-size: 12px; color: #6b7280; margin-top: 6px; }
+    label { font-size: 12px; color: #374151; }
+    .toggle-row { display: flex; justify-content: space-between; align-items: center; margin-top: 6px; }
+    .toggle-row span { font-size: 12px; color: #374151; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="title">FinShield AI</div>
+  <div class="sub">Automatic phishing detection for banking staff</div>
+
+  <div id="authCard" class="card" style="display:none;">
+    <div style="font-weight:700;margin-bottom:6px;">Extension Login</div>
+    <label>Username</label>
+    <input id="username" placeholder="admin / analyst / employee / viewer" />
+    <div style="height:6px;"></div>
+    <label>Password</label>
+    <input id="password" type="password" placeholder="admin123 / analyst123 / employee123 / viewer123" />
+    <button id="loginBtn" class="primary">Login</button>
+    <div id="authError" class="muted" style="color:#b91c1c;"></div>
+  </div>
+
+  <div id="statusCard" class="card" style="display:none;">
+    <div class="row">
+      <div style="font-weight:800;">Current Page Security</div>
+      <div id="riskPill" class="pill pill-unknown">NO SCAN</div>
+    </div>
+    <div id="urlLine" class="muted"></div>
+    <div id="whyLine" class="muted"></div>
+    <div style="margin-top:10px;">
+      <div class="toggle-row">
+        <span>Auto-scan all pages</span>
+        <input id="autoScanToggle" type="checkbox" />
+      </div>
+      <div class="toggle-row">
+        <span>Block High-Risk pages</span>
+        <input id="blockToggle" type="checkbox" />
+      </div>
+      <div class="muted">Auto scan works only when you are logged in.</div>
+    </div>
+    <button id="rescanBtn" class="secondary">Scan this page now</button>
+    <button id="logoutBtn" class="danger">Logout</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

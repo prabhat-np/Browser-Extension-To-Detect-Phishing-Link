@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "FinShield AI Browser Guard",
+  "version": "2.0",
+  "description": "Automatic phishing protection for bank employees (FinShield AI).",
+  "permissions": ["tabs", "activeTab", "scripting", "storage", "webNavigation"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "FinShield AI"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "host_permissions": ["<all_urls>", "http://127.0.0.1:8000/*", "http://localhost:8000/*"]
+}
